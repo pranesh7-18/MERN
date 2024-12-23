@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 10px;
+            border-radius: 10px;
+            padding-top: 40px;
+        }
+
+        .text-input {
+            height: 30px;
+            width:300px;
+        }
+
+        #submit {
+            margin-top: 7px;
+            padding: 3px 15px;
+            background-color: rgb(27, 189, 27);
+            border: none;
+        }
+
+        #submit:hover {
+            cursor: pointer;
+        }
+        #signUp{
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="height: 100vh;">
+        <form action="login" method="post" class="container" style="border: 2px solid rgb(14, 1, 1);">
+            <input id="email" name="email" type="email" placeholder="Enter email" class="text-input" required>
+            <input id="password" name="password" type="password" placeholder="Enter password" class="text-input" required>
+            <div>
+            <button id="submit" type="submit">Login</button>
+            <a id="signUp" href="signUp.html">New User?</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

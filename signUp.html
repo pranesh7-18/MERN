@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        #submit{
+            background-color: rgb(24, 192, 24);
+            padding: 5px 10px;
+            border: none;
+            margin-top: 10px;
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+        td{
+            text-align: left;
+        }
+        table{
+            border-collapse: separate;
+            border-spacing: 20px 10px;
+        }
+        .text-input{
+            height:25px;
+        }
+        label{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="height: 100vh;">
+        <form action="signUp" method="post" class="container" style="border: 2px solid black;">
+            <table>
+                <tr>
+                    <td><label for="email">Enter email: </label></td>
+                    <td><input id="email" name="email" type="email" class="text-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Create password: </label></td>
+                    <td><input id="password" name="password" type="password" class="text-input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="re-enter">Re-Enter password: </label></td>
+                    <td><input id="re-enter" name="re_enter" type="text" class="text-input" required></td>
+                </tr>
+            </table>
+            <div>
+                <button id="submit" type="submit">Create Account</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
