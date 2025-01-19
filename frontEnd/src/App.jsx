@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import myAvatar from './assets/my-avatar.png'
 import './App.css'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       {/* Left Bar */}
       <div className="left-bar">
         <div className="profile-pic">
-          <img src="my-avatar.png" alt="Profile Picture" />
+          <img src={myAvatar} alt="Profile Picture" />
         </div>
         <h2>Pranesh S</h2>
         <p className="tagline">
@@ -71,12 +71,19 @@ function App() {
           <div className="home_container">
             <h2>Hello,</h2>
             <h2>I am Pranesh S</h2>
-            <p className="descrption">Proactive ECE student with a strong foundation in electronics design, programming, and signal processing.</p>
-            <p className="descrption">
-              Enthusiastic Electronics and Communication Engineering student seeking to leverage technical skills and knowledge in circuits, communication systems, and embedded technologies to contribute to innovative projects and professional growth.
-            </p>
-            <p className="descrption">
-              Driven by a keen interest in embedded systems and communication technologies, I am eager to translate my technical expertise into practical solutions.
+            <p class="descrption">Proactive ECE student with a strong foundation in electronics design,
+              programming, and signal processing.Skilled in analyzing and solving technical
+              challenges and eager to apply theoretical concepts to real-world applications.</p>
+            <p class="descrption">
+              Enthusiastic Electronics and Communication Engineering student seeking to leverage technical
+              skills and knowledge in circuits,
+              communication systems, and embedded technologies to contribute to innovative projects and
+              professional growth.</p>
+            <p class="descrption">
+              Driven by a keen interest in embedded systems and communication technologies, I am eager to
+              translate my technical expertise into practical solutions.
+              Recognized for my analytical mindset and curiosity, I excel in working collaboratively and
+              adapting to challenging environments.
             </p>
           </div>
           <div className="home_container">
@@ -96,21 +103,52 @@ function App() {
           </div>
         </div>
         <div id="project" className={`content-section ${activeSection === 'project' ? 'active' : ''}`}>
-          <div className="project_container">
+          <div class="project_container">
             <h2>JDBC Hospital Management</h2>
-            <p className="descrption">This project involves designing a hospital management system using Java Database Connectivity (JDBC).</p>
+            <p class="descrption">JDBC Hospital Management
+              This project involves designing a hospital management system using Java Database Connectivity
+              (JDBC).
+              The system integrates a user-friendly interface with a database to manage hospital operations
+              such as patient records,
+              doctor schedules, appointment bookings, and billing. It demonstrates efficient database
+              connectivity, query execution,
+              and data manipulation in Java, showcasing how technology streamlines administrative tasks in
+              healthcare.</p>
           </div>
-          <div className="project_container">
+          <div class="project_container">
             <h2>People Counting Using IR Sensor and Embedded Systems</h2>
-            <p className="descrption">This project utilizes Infrared (IR) sensors and embedded systems to develop a people-counting device.</p>
+            <p class="descrption">This project utilizes Infrared (IR) sensors and embedded systems to develop a
+              people-counting device.
+              The system detects the entry and exit of individuals by using IR beams and processes the count
+              data in real-time.
+              Applications include automating occupancy tracking in rooms, malls, or offices, and implementing
+              crowd control measures.
+              The embedded system ensures accuracy and low power consumption, making it suitable for smart
+              monitoring systems.</p>
           </div>
-          <div className="project_container">
+          <div class="project_container">
             <h2>Smart Lock System</h2>
-            <p className="descrption">This embedded system project features a secure smart lock controlled via a keypad.</p>
+            <p class="descrption">
+              This embedded system project features a secure smart lock controlled via a keypad.
+              Users input a password, which the microcontroller (AT89C51) verifies to lock or unlock a
+              mechanism.
+              The system includes an LCD for user feedback, displaying lock status or prompting for the
+              password.
+              It's a practical application of microcontroller interfacing, emphasizing security, ease of use,
+              and real-world
+              embedded solutions.</p>
           </div>
-          <div className="project_container">
+          <div class="project_container">
             <h2>Smart Home Automation</h2>
-            <p className="descrption">The Smart Home Automation project focuses on creating a system to control home appliances remotely.</p>
+            <p class="descrption">
+              The Smart Home Automation project focuses on creating a system to control home appliances
+              such as lights, fans, or other devices remotely. Using microcontrollers or Arduino, the system
+              integrates sensors and
+              communication modules (e.g., Bluetooth, Wi-Fi) to enable control via a smartphone or voice
+              commands.
+              This project highlights the growing trend of IoT in making homes energy-efficient, convenient,
+              and futuristic.
+            </p>
           </div>
         </div>
         <div id="skills" className={`content-section ${activeSection === 'skills' ? 'active' : ''}`}>
@@ -190,11 +228,11 @@ function App() {
             <a href="#" className="social-link" style={{ fontSize: '30px', color: 'rgb(26, 108, 176)' }}>
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-            <a href="#" className="social-link" style={{ fontSize: '30px', color: '#ff0000' }}>
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-            <a href="#" className="social-link" style={{ fontSize: '30px', color: '#000000' }}>
+            <a href="#" className="social-link" style={{ fontSize: '30px', color: 'white' }}>
               <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="#" className="social-link" style={{ fontSize: '30px', color: '#E1306C' }}>
+              <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </div>
         </div>
